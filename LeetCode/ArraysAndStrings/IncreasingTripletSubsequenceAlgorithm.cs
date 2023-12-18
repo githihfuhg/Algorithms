@@ -10,7 +10,9 @@ public class IncreasingTripletSubsequenceAlgorithm
 {
     public static bool IncreasingTriplet(int[] nums)
     {
-        if (nums.Length < 3)
+        const int minSequenceLength = 3;
+
+        if (nums.Length < minSequenceLength)
         {
             return false;
         }
