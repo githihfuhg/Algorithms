@@ -11,7 +11,6 @@ public class ProductArrayExceptSelfAlgorithm
     public static int[] ProductExceptSelf(int[] nums)
     {
         var resultArray = new int[nums.Length];
-
         var right = 1;
         for (var i = 0; i < nums.Length; i++)
         {

@@ -12,7 +12,6 @@ public class KidsWithGreatestNumberCandiesAlgorithm
     {
         var maxCandyCount = candyCounts.Max();
         var result = new List<bool>(candyCounts.Length);
-
         foreach (var candyCount in candyCounts)
         {
             var isMaxCount = candyCount + extraCandies >= maxCandyCount;

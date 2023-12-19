@@ -14,7 +14,6 @@ public class ReverseVowelsStringAlgorithm
         var symbols = s.ToCharArray();
         var vowelLetters = symbols.Where(x => allVowelLetters.Contains(x));
         var vowelLettersStack = new Stack<char>(vowelLetters);
-
         for (var index = 0; index < symbols.Length; index++)
         {
             var symbol = symbols[index];

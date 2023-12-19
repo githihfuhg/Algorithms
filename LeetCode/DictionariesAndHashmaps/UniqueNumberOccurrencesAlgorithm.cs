@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Algorithms.LeetCode.HashMaps;
+namespace Algorithms.LeetCode.DictionariesAndHashmaps;
 
 /// <summary>
 /// Unique Number of Occurrences.
@@ -19,7 +19,7 @@ public class UniqueNumberOccurrencesAlgorithm
                 continue;
             }
 
-            numberCountByNumber[number] = 0;
+            numberCountByNumber[number] = 1;
         }
 
         var numberCounts = new HashSet<int>();

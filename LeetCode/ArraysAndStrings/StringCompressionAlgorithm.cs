@@ -11,22 +11,21 @@ public class StringCompressionAlgorithm
 {
     public static int Compress(char[] chars)
     {
-        var compressedSymbols = new StringBuilder();
-        var firstSymbol = chars[0];
-        var duplicatedCount = 1;
-
         if (chars.Length == 1)
         {
             return 1;
         }
-
+        
+        var compressedSymbols = new StringBuilder();
+        var firstSymbol = chars[0];
+        var duplicateCount = 1;
         for (var index = 1; index < chars.Length; index++)
         {
             var secondSymbol = chars[index];
 
             if (firstSymbol == secondSymbol)
             {
-                duplicatedCount++;
+                duplicateCount++;
             }
 
             var isLast = index == chars.Length - 1;
@@ -34,12 +33,12 @@ public class StringCompressionAlgorithm
             if (firstSymbol != secondSymbol || isLast)
             {
                 compressedSymbols.Append(firstSymbol);
-                if (duplicatedCount > 1)
+                if (duplicateCount > 1)
                 {
-                    compressedSymbols.Append(duplicatedCount);
+                    compressedSymbols.Append(duplicateCount);
                 }
 
-                duplicatedCount = 1;
+                duplicateCount = 1;
             }
 
             if (firstSymbol != secondSymbol && isLast)

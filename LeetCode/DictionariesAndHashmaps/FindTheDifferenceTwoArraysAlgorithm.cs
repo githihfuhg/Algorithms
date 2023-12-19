@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Algorithms.LeetCode.HashMaps;
+namespace Algorithms.LeetCode.DictionariesAndHashmaps;
 
 /// <summary>
 /// Find the Difference of Two Arrays.
