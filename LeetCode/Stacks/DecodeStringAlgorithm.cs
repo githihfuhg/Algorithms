@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Algorithms.LeetCode.Stack;
+namespace Algorithms.LeetCode.Stacks;
 
 /// <summary>
 ///  Decode String.
